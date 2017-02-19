@@ -1,19 +1,89 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
-
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
-  </head>
-  <body>
+    <script src="https://use.typekit.net/okb0sgo.js"></script>
+    <script>
+    try {
+        Typekit.load({
+            async: true
+        });
+    } catch (e) {}
+    </script>
+</head>
 
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-    {{> body}}
-
+<body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+                <!-- Your menu or Off-canvas content goes here -->
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!--<header>
+                    <div class="row">
+                        <div class="logo">
+                            
+                        </div>
+                    </div>
+                </header>-->
+                <header id="topnav">
+                    <div class="row">
+                        <div class="logo">
+                            <a href=""><img src="{{root}}assets/img/logo.svg"></a>
+                        </div>
+                        <nav role='navigation'>
+                            <ul class="left">
+                                <li><a href="#">INDUSTRIES</a></li>
+                                <li><a href="#">PRODUCTS</a></li>
+                                <li><a href="#">SERVICES</a></li>
+                                <li><a href="#">MORE</a></li>
+                                <li><a href="#">BUY/CONTACT</a></li>
+                            </ul>
+                            <ul class="right">
+                            <li><a href="#">LOGIN</a> | </li>
+                            <li><a href="#">LANGUAGE</a></li>
+                            <li>
+                            <form action="/en/search" method="GET" id="header-search">
+                                <input type="text" placeholder="Search..." name="" required="">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                            </li>
+                        </nav>
+                    </div>
+                </header>
+                {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}} {{> body}}
+            </div>
+        </div>
+    </div>
     <script src="{{root}}assets/js/app.js"></script>
-  </body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > 80) {
+                $('body').addClass('header-fixed');
+            } else {
+                $('body').removeClass('header-fixed');
+            }
+            // change the style of the navbar when the user scrolls into the next zone.
+            // get the distance of the 2nd section from the top of the page - height of header.
+            var topOffset = $('#demosection2').offset().top;
+            var headerHeight = $('#topnav').height();
+            var transitionPoint = topOffset - headerHeight;
+            if (scrollTop > transitionPoint) {
+                $('#topnav').addClass('alt-header');
+            } else {
+                $('#topnav').removeClass('alt-header');
+            }
+        });
+    });
+    </script>
+</body>
+
 </html>

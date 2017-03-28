@@ -5,6 +5,16 @@
 @import 'motion-ui';
 
 @import 'custom';
+@import 'slick';
+@import 'slick-theme';
+//@import 'fs-slider';
+
+@import 'small';
+@import 'medium';
+@import 'medium-up';
+@import 'large';
+@import 'large-up';
+
 
 @include foundation-global-styles;
 @include foundation-grid;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-5" y="-5" width="60" height="60">
+            <rect x="-5" y="-5" width="60" height="60" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <polygon id="path-3" points="0 14 8 14 8 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-730.000000, -1622.000000)">
+            <g id="design" transform="translate(-249.000000, 0.000000)">
+                <g id="vision" transform="translate(379.000000, 1290.000000)">
+                    <g id="copy" transform="translate(599.000000, 184.000000)">
+                        <g id="roundCTA-LM" transform="translate(6.000000, 153.000000)">
+                            <g id="roundCTA">
+                                <g id="icon">
+                                    <g id="Oval-2">
+                                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        <use stroke="#EBEBEB" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
+                                    </g>
+                                    <g id="Page-1" transform="translate(21.000000, 18.000000)">
+                                        <mask id="mask-4" fill="white">
+                                            <use xlink:href="#path-3"></use>
+                                        </mask>
+                                        <g id="Clip-2"></g>
+                                        <path d="M0.293,13.707 C0.684,14.098 1.316,14.098 1.707,13.707 L7.707,7.707 C8.098,7.316 8.098,6.684 7.707,6.293 L1.707,0.293 C1.512,0.098 1.256,0 1,0 C0.744,0 0.488,0.098 0.293,0.293 C-0.098,0.684 -0.098,1.316 0.293,1.707 L5.586,7 L0.293,12.293 C-0.098,12.684 -0.098,13.316 0.293,13.707" id="Fill-1" fill="#FF0000" mask="url(#mask-4)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

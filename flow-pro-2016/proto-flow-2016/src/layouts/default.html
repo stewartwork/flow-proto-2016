@@ -25,14 +25,8 @@
                 <!-- Your menu or Off-canvas content goes here -->
             </div>
             <div class="off-canvas-content" data-off-canvas-content>
-                <!--<header>
-                    <div class="row">
-                        <div class="logo">
-                            
-                        </div>
-                    </div>
-                </header>-->
                 <header id="topnav">
+                    <img data-toggle="offCanvas" class="menu-mob hide-for-large" src="{{root}}assets/img/menu.svg">
                     <div class="row">
                         <div class="logo">
                             <a href=""><img src="{{root}}assets/img/logo.svg"></a>
@@ -46,14 +40,15 @@
                                 <li><a href="#">BUY/CONTACT</a></li>
                             </ul>
                             <ul class="right">
-                            <li><a href="#">LOGIN</a> | </li>
-                            <li><a href="#">LANGUAGE</a></li>
-                            <li>
-                            <form action="/en/search" method="GET" id="header-search">
-                                <input type="text" placeholder="Search..." name="" required="">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                            </li>
+                                <li><a href="#">LOGIN</a> | </li>
+                                <li><a href="#">LANGUAGE</a></li>
+                                <li>
+                                    <form action="/en/search" method="GET" id="header-search">
+                                        <input type="text" placeholder="Search..." name="" required="">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </li>
+                            </ul>
                         </nav>
                     </div>
                 </header>
@@ -62,6 +57,7 @@
         </div>
     </div>
     <script src="{{root}}assets/js/app.js"></script>
+    <script src="{{root}}assets/js/slick.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         $(window).scroll(function() {
@@ -81,6 +77,16 @@
             } else {
                 $('#topnav').removeClass('alt-header');
             }
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).on('ready', function() {
+        $(".center").slick({
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 1,
+            //slidesToScroll: 3
         });
     });
     </script>
